@@ -1,8 +1,9 @@
 import About from "@/Components/About";
 import { Blog } from "@/Components/Blog";
 import Header from "@/Components/Header";
+import Project from "@/Components/Project";
 import Service from "@/Components/Service";
-import WorkProcess from "@/Components/WorkProcess";
+import Youtube from "@/Components/Youtube";
 
 export default function Home() {
   return (
@@ -10,7 +11,8 @@ export default function Home() {
       <Header />
       <About />
       <Service />
-      <WorkProcess />
+      <Project />
+      <Youtube />
       <Blog />
     </main>
   );

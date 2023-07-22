@@ -1,5 +1,11 @@
 import Link from "next/link";
-import Button from "./shared/Button";
+import { CiFacebook } from "react-icons/ci";
+import {
+  AiFillGithub,
+  AiOutlineLinkedin,
+  AiFillTwitterCircle,
+  AiOutlineInstagram,
+} from "react-icons/ai";
 const Header = () => {
   return (
     <div>
@@ -8,7 +14,7 @@ const Header = () => {
           {/* Left Side */}
           <div className="flex">
             <div className="flex flex-col items-center justify-center mr-10">
-              <span className="w-5 h-5 rounded-full bg-[#8E60F8] block"></span>
+              <span className="w-5 h-5 rounded-full bg-primary block"></span>
               <span className="w-1 h-80 bg1 block mt-[-5px]"></span>
             </div>
             <div>
@@ -19,6 +25,25 @@ const Header = () => {
               <p className="text-lg text-indigo-100 my-5 md:text-left text-center">
                 Passionate Front-end Web Developer.
               </p>
+
+              <div className="flex mt-4 space-x-6 sm:mt-0 text-gray-500">
+                <a href="https://github.com/JosimHossain1">
+                  <AiFillGithub className="hover:text-gray-700 text-2xl cursor-pointer" />
+                </a>
+                <a href="https://www.linkedin.com/in/josim40212/">
+                  <AiOutlineLinkedin className="hover:text-gray-700 text-2xl cursor-pointer" />
+                </a>
+                <a href="https://twitter.com/JosimHossain11">
+                  <AiFillTwitterCircle className="hover:text-gray-700 text-2xl cursor-pointer" />
+                </a>
+
+                <a href="https://www.facebook.com/josim40212">
+                  <CiFacebook className="hover:text-gray-700 text-2xl cursor-pointer" />
+                </a>
+                <a href="https://www.instagram.com/josim40212/">
+                  <AiOutlineInstagram className="hover:text-gray-700 text-2xl cursor-pointer" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

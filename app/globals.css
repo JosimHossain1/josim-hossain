@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Default Code */
 * {
   margin: 0;
   padding: 0;
@@ -13,31 +14,23 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
-/* Hero Area Overlay */
 
-.gradiant {
-  background: rgb(13, 113, 120);
-  background: radial-gradient(
-    circle,
-    rgba(13, 113, 120, 0.9009978991596639) 0%,
-    rgba(11, 181, 110, 0.8785889355742297) 100%
-  );
+/* Custom Color Panel */
+
+.bg-primary {
+  background-color: #8e60f8;
+}
+.primary-color {
+  color: #8e60f8;
+}
+.btn-bg {
+  background: #672fed;
 }
 
-/* Background for Work Process Section */
 .bg1 {
   background: linear-gradient(
     180deg,
     rgba(142, 96, 248, 1) 0%,
     rgba(15, 8, 38, 1) 70%
-  );
-}
-
-.bg2 {
-  background: rgb(11, 181, 110);
-  background: linear-gradient(
-    90deg,
-    rgba(11, 181, 110, 1) 0%,
-    rgba(13, 113, 120, 1) 100%
   );
 }

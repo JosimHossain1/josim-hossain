@@ -13,7 +13,7 @@ const Navbar = () => {
 
   const menus = [
     { title: "Home", path: "/" },
-    { title: "Previous Work", path: "/shop" },
+    { title: "Previous Work", path: "/work" },
     { title: "Service", path: "/service" },
     { title: "Blog", path: "/blog" },
     { title: "Contact", path: "/contact" },
