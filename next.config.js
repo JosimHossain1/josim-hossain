@@ -6,6 +6,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "mdjosimvai.files.wordpress.com",
       },
+      {
+        protocol: "https",
+        hostname: "miro.medium.com",
+      },
+      {
+        protocol: "https",
+        hostname: "freeprojectscodes.com",
+      },
     ],
   },
 };
