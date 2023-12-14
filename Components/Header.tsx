@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { CiFacebook } from "react-icons/ci";
 import {
   AiFillGithub,
@@ -10,7 +9,7 @@ const Header = () => {
   return (
     <div>
       <div>
-        <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  py-52">
+        <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  pt-52 min-h-screen ">
           {/* Left Side */}
           <div className="flex">
             <div className="flex flex-col items-center justify-center mr-10">
