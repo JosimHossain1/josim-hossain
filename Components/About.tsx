@@ -15,7 +15,7 @@ const About = () => {
           <h1 className="text-xl font-bold  my-4 text-center md:text-left">
             ABOUT ME
           </h1>
-          <p className="text-gray-500 text-[15px] text-center ">
+          <p className="text-gray-500 text-[15px] text-center md:text-left">
             I&apos;m Josim hossain a skilled front-end developer with 2 years of
             experience. My primary specialization is NextJS and Tailwind CSS,
             and expertise in modern front-end technology.

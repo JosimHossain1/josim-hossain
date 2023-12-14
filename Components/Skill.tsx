@@ -6,7 +6,7 @@ const Skill = () => {
   const skill = [
     {
       name: "Expert On",
-      skill: "NextJS || Tailwind CSS || TypeScript || MongoDB.",
+      skill: "NextJS || Tailwind CSS || TypeScript || Prisma || MongoDB.",
     },
     {
       name: "Front-End",
