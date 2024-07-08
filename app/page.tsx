@@ -1,10 +1,10 @@
-import About from '@/components/About';
-import Header from '@/components/Header';
-import Project from '@/components/Project';
+import About from '@/Components/About';
+import Header from '@/Components/Header';
+import Project from '@/Components/Project';
 
-import Youtube from '@/components/Youtube';
-import Skill from '@/components/Skill';
-import Education from '@/components/Education';
+import Youtube from '@/Components/Youtube';
+import Skill from '@/Components/Skill';
+import Education from '@/Components/Education';
 
 export default function Home() {
   return (
