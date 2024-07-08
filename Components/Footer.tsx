@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="border-t border-[#201548]">
+    <div className="border-t border-[#201548] bg-slate-900">
       <footer className=" mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 flex justify-between items-center py-4 ">
         <div className="text-sm text-[#cdcdcd]">
           Copyright &copy; 2023 josim hossain

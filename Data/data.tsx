@@ -33,22 +33,10 @@ export const projectData = [
     demoURL: "https://finance-website-with-html-css-josim.netlify.app",
   },
   {
-    name: "Bangladesh E-Passport (Clone)",
-    imageURL: "https://mdjosimvai.files.wordpress.com/2023/12/e-passport-bd.jpg",
-    usecaseURL: "",
-    demoURL: "https://e-passport-clone-by-josim-hossain.netlify.app/",
-  },
-  {
     name: "Furnitur (Clone)",
     imageURL:
       "https://mdjosimvai.files.wordpress.com/2023/07/furniture.jpg?w=768",
     usecaseURL: "",
     demoURL: "https://furniture-website-by-josim-hossain.netlify.app",
-  },
-  {
-    name: "Vegetable Shop",
-    imageURL: "https://mdjosimvai.files.wordpress.com/2023/07/vegetable.jpg",
-    usecaseURL: "",
-    demoURL: "https://vegetable-shop-by-josim.netlify.app",
-  },
+  }
 ];
