@@ -9,7 +9,7 @@ const About = () => {
       <div className='mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl px-4 md:px-24 lg:px-8 pb-16 flex justify-between items-center md:space-x-10 '>
         {/* Image Side */}
         <div className='flex-1'>
-          <Image src='/about.png' alt='Josim Hawladar' className='mx-auto' />
+          <Image src='/about.png' width={550} height={550} alt='Josim Hawladar' className='mx-auto' />
         </div>
 
         {/* About Side */}

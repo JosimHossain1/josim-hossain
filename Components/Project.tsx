@@ -3,7 +3,7 @@ import { projectData } from "../Data/data";
 
 const Project = () => {
   return (
-    <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 text-center">
+    <div className="px-4 text-white mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 text-center">
       <h3 className=" font-semibold text-4xl text-center">Latest Project</h3>
       <span className="block bg-primary h-1 w-36 mx-auto mb-10 mt-4"></span>
 

@@ -2,26 +2,30 @@ import { CiFacebook } from 'react-icons/ci';
 import { AiFillGithub, AiOutlineLinkedin } from 'react-icons/ai';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaExternalLinkAlt, FaYoutube } from 'react-icons/fa';
+import { Button } from './ui/button';
 
 function Header() {
   return (
-    <section className='relative  flex flex-col items-center justify-between md:py-36 pt-28 pb-10 px-10 bg-slate-900 '>
+    <section className='relative flex flex-col items-center justify-between md:py-36 pt-28 pb-10 px-10 bg-slate-900'>
       <Image
         src='/hero.svg'
         alt='Hero'
         width={1572}
         height={795}
-        className='absolute -top-[98px] z-10'
+        className='absolute -top-[98px] z-0' // Adjusted z-index
       />
 
-      <div className='lg:flex justify-between items-center md:space-x-5'>
+      <div className='lg:flex justify-between items-center md:space-x-5 z-10'>
+        {' '}
+        {/* Added z-index */}
         <div className='flex lg:w-[55%]'>
           <div className='flex flex-col items-center justify-center mr-10'>
             <span className='w-5 h-5 rounded-full bg-[#8E60F8] block'></span>
             <span className='w-1 h-80 bg-gradient-to-b from-[#8E60F8] to-slate-900 block mt-[-5px]'></span>
           </div>
           <div>
-            <h2 className='poppins-bold text-indigo-200 text-2xl md:text-3xl  lg:leading-loose leading-normal tracking-tight text-left'>
+            <h2 className='poppins-bold text-indigo-200 text-2xl md:text-3xl lg:leading-loose leading-normal tracking-tight text-left'>
               Hello, <br />
               <span className='lg:text-8xl text-6xl'>
                 I am <span className='text-[#8E60F8]'> Josim</span>
@@ -41,13 +45,29 @@ function Header() {
                 <AiFillGithub className='hover:text-indigo-300 text-2xl ' />
               </Link>
               <a href='https://www.linkedin.com/in/josim40212/'>
-                <AiOutlineLinkedin className='hover:text-gray-700 text-2xl cursor-pointer' />
+                <AiOutlineLinkedin className='hover:text-blue-500 text-2xl' />
               </a>
 
               <a href='https://www.facebook.com/josim40212'>
-                <CiFacebook className='hover:text-gray-700 text-2xl cursor-pointer' />
+                <CiFacebook className='hover:text-indigo-500 text-2xl ' />
+              </a>
+              <a href='https://www.facebook.com/josim40212'>
+                <FaYoutube className='hover:text-red-500 text-2xl ' />
               </a>
             </div>
+            <a
+              href='https://drive.google.com/file/d/1Z9B_9IN6FxyZ5HSGOkmFy-YTcS5rVLpL/view'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Button
+                variant='outline'
+                className='bg-transparent cursor-pointer space-x-2 mt-5 text-indigo-400 border-indigo-400 hover:bg-slate-900 hover:text-indigo-400'
+              >
+                <FaExternalLinkAlt />
+                <span>Download Resume</span>
+              </Button>
+            </a>
           </div>
         </div>
         <div className='from-[#8e60f81e] border-[#1b2c68d0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] lg:w-[45%] mt-10'>
