@@ -10,7 +10,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@/components/ui/dialog';
+} from './ui/dialog';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { ArrowRight } from 'lucide-react';
 const Project = () => {
