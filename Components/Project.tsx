@@ -6,7 +6,6 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
@@ -16,7 +15,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 import { ArrowRight } from 'lucide-react';
 const Project = () => {
   return (
-    <div className='px-4 text-white mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20'>
+    <div className='px-4 text-white mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20'>
       <div className='text-center'>
         <h3 className='poppins-bold text-center text-3xl py-1 text-indigo-200 mx-auto'>
           Creative Portfolio

@@ -5,6 +5,8 @@ import Project from '@/components/Project';
 import Youtube from '@/components/Youtube';
 import Skill from '@/components/Skill';
 import Education from '@/components/Education';
+import Activities from '@/components/Activities';
+// import Gallery from '@/components/Gallery';
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Skill />
       <Education />
       <Project />
+      {/* <Gallery/> */}
+      <Activities/>
       <Youtube />
     </main>
   );
