@@ -2,13 +2,13 @@ import { FaGraduationCap } from 'react-icons/fa';
 
 const Education = () => {
   return (
-    <div className='w-[60%] mx-auto'>
+    <div className='md:w-[60%] px-6 mx-auto'>
       <div className='text-center'>
         <h3 className='poppins-bold text-center text-3xl py-1 text-indigo-200 w-fit mx-auto'>
           Educational Qualifications
         </h3>
-        <span className='block bg-indigo-500 h-1 w-[30%] mx-auto'></span>
-        <p className='text-gray-400 mx-auto mt-3 px-32'>
+        <span className='block bg-indigo-500 h-1 w-[30%] md:w-[20] lg:w-[10] mx-auto'></span>
+        <p className='text-gray-400 lg:w-2/3 mx-auto mt-3 lg:px-32'>
           "Explore my robust educational background and technical expertise in
           Computer Science and Technology."
         </p>
@@ -31,7 +31,7 @@ const Education = () => {
             as Mathematics, ethics, environmental studies, business, and
             physical and mental health education.
           </p>
-          <div className='flex justify-between'>
+          <div className='md:flex md:justify-between'>
             <div className='mb-4 ml-4 text-base font-normal text-gray-500'>
               <h4 className='text-lg text-indigo-100 poppins-semibold'>
                 4th Semester:
@@ -43,7 +43,7 @@ const Education = () => {
                 <li>Web Design and Development Basics</li>
               </ul>
             </div>
-            <div className='mb-4 text-base font-normal text-gray-500'>
+            <div className='mb-4 ml-4 text-base font-normal text-gray-500 '>
               <h4 className='text-lg text-indigo-100 poppins-semibold'>
                 3rd Semester:
               </h4>
@@ -54,7 +54,7 @@ const Education = () => {
               </ul>
             </div>
           </div>
-          <div className='flex justify-between'>
+          <div className='md:flex justify-between'>
             <div className='mb-4 ml-4 text-base font-normal text-gray-500'>
               <h4 className='text-lg text-indigo-100 poppins-semibold'>
                 2nd Semester:
@@ -64,7 +64,7 @@ const Education = () => {
                 <li>Basic Python</li>
               </ul>
             </div>
-            <div className='mb-4 text-base font-normal text-gray-500'>
+            <div className='mb-4 ml-4 text-base font-normal text-gray-500'>
               <h4 className='text-lg text-indigo-100 poppins-semibold'>
                 1st Semester:
               </h4>

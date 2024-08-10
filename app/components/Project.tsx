@@ -20,8 +20,8 @@ const Project = () => {
         <h3 className='poppins-bold text-center text-3xl py-1 text-indigo-200 mx-auto'>
           Creative Portfolio
         </h3>
-        <span className='block bg-indigo-500 h-1 w-[10%] mx-auto'></span>
-        <p className='text-gray-400 w-2/3 mx-auto mt-3 px-32'>
+        <span className='block bg-indigo-500 h-1 w-[30%] md:w-[20] lg:w-[10] mx-auto'></span>
+        <p className='text-gray-400 lg:w-2/3 mx-auto mt-3 lg:px-32'>
           "Explore some of my most notable projects, showcasing my design and
           development skills through innovative and impactful solutions."
         </p>
