@@ -9,8 +9,7 @@ const Activities = () => {
         </h3>
         <span className='block bg-indigo-500 h-1 w-[10%] mx-auto'></span>
         <p className='text-gray-400 w-2/3 mx-auto mt-3 px-32'>
-          "Explore some of my most notable projects, showcasing my design and
-          development skills through innovative and impactful solutions."
+         "Highlighting significant achievements in innovative problem-solving and sustainable development, recognized for their impact and excellence."
         </p>
       </div>
 

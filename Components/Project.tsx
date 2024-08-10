@@ -61,11 +61,9 @@ const Project = () => {
                   </DialogFooter>
                 </DialogContent>
               </Dialog>
-              <Link href={item.demoURL} target='_blank'>
-                <Button className='text-indigo-200 hover:text-indigo-500  border border-indigo-200  hover:bg-indigo-100'>
-                  <FaExternalLinkAlt />{' '}
+              <Link href={item.demoURL} target='_blank' className='flex items-center text-sm text-indigo-100 underline'>
+                  <FaExternalLinkAlt />
                   <span className='ml-2'>Live Preview</span>
-                </Button>
               </Link>
             </div>
           </div>
@@ -74,7 +72,7 @@ const Project = () => {
 
       <div className='flex justify-center my-10'>
         <Button className='border border-indigo-400 text-indigo-400 animate-pulse'>
-          <span className='mr-2'>View More Projects</span>{' '}
+          <span className='mr-2'>View More Projects</span>
           <ArrowRight className='w-5' />
         </Button>
       </div>
