@@ -19,8 +19,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className='fixed w-full z-20 '>
-      <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
+    <nav className='fixed w-full z-20 px-6 md:px-10 lg:px-20 xl:px-24'>
+      <div className='flex items-center justify-between mx-auto p-4'>
         <a href='/' className='flex items-center'>
           <Image
             src={logo}

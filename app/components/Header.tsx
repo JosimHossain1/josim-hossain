@@ -7,7 +7,7 @@ import { Button } from './ui/button';
 
 function Header() {
   return (
-    <section className='relative flex flex-col items-center justify-between md:py-36 pt-28 pb-10 px-10 bg-slate-900'>
+    <section className='relative flex flex-col items-center justify-between bg-slate-900 min-h-screen'>
       <Image
         src='/hero.svg'
         alt='Hero'
@@ -16,10 +16,10 @@ function Header() {
         className='absolute -top-[98px] z-0' // Adjusted z-index
       />
 
-      <div className='lg:flex justify-between items-center md:space-x-5 z-10'>
+      <div className='lg:flex justify-between items-center md:space-x-20 z-10 min-h-screen px-6 md:px-10 lg:px-20 xl:px-24'>
         {' '}
         {/* Added z-index */}
-        <div className='flex lg:w-[55%]'>
+        <div className='flex xl:w-[45%]'>
           <div className='flex flex-col items-center justify-center mr-10'>
             <span className='w-5 h-5 rounded-full bg-[#8E60F8] block'></span>
             <span className='w-1 h-80 bg-gradient-to-b from-[#8E60F8] to-slate-900 block mt-[-5px]'></span>
@@ -44,14 +44,14 @@ function Header() {
               >
                 <AiFillGithub className='hover:text-indigo-300 text-2xl ' />
               </Link>
-              <a href='https://www.linkedin.com/in/josim40212/'>
+              <a href='https://www.linkedin.com/in/josim-hawladar'>
                 <AiOutlineLinkedin className='hover:text-blue-500 text-2xl' />
               </a>
 
-              <a href='https://www.facebook.com/josim40212'>
+              <a href='https://www.facebook.com/hawladar.josim'>
                 <CiFacebook className='hover:text-indigo-500 text-2xl ' />
               </a>
-              <a href='https://www.facebook.com/josim40212'>
+              <a href='https://www.youtube.com/@deshideveloper93'>
                 <FaYoutube className='hover:text-red-500 text-2xl ' />
               </a>
             </div>
@@ -70,7 +70,8 @@ function Header() {
             </a>
           </div>
         </div>
-        <div className='from-[#8e60f81e] border-[#1b2c68d0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] lg:w-[45%] mt-10'>
+        {/* Code side */}
+        <div className='from-[#8e60f81e] border-[#1b2c68d0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] lg:w-[45%] mt-10 '>
           <div className='flex flex-row'>
             <div className='h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600'></div>
             <div className='h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent'></div>
@@ -82,8 +83,8 @@ function Header() {
               <div className='h-3 w-3 rounded-full bg-green-200'></div>
             </div>
           </div>
-          <div className='overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8'>
-            <code className='font-mono text-xs md:text-sm lg:text-base text-indigo-100'>
+          <div className='overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 xl:py-16'>
+            <code className='font-mono text-xs md:text-sm lg:text-base xl:text-xl text-indigo-100'>
               <div>
                 <span className='text-gray-500'>
                   {' '}
