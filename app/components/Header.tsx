@@ -7,7 +7,7 @@ import { Button } from './ui/button';
 
 function Header() {
   return (
-    <section className='relative flex flex-col items-center justify-between bg-slate-900 min-h-screen'>
+    <section className='relative flex flex-col items-center justify-between bg-slate-900 min-h-screen pt-36 sm:pt-44 md:pt-44 lg:pt-10'>
       <Image
         src='/hero.svg'
         alt='Hero'
@@ -17,9 +17,8 @@ function Header() {
       />
 
       <div className='lg:flex justify-between items-center md:space-x-20 z-10 min-h-screen px-6 md:px-10 lg:px-20 xl:px-24'>
-        {' '}
         {/* Added z-index */}
-        <div className='flex xl:w-[45%]'>
+        <div className='flex lg:w-[55%] xl:w-[45%]'>
           <div className='flex flex-col items-center justify-center mr-10'>
             <span className='w-5 h-5 rounded-full bg-[#8E60F8] block'></span>
             <span className='w-1 h-80 bg-gradient-to-b from-[#8E60F8] to-slate-900 block mt-[-5px]'></span>
@@ -27,12 +26,12 @@ function Header() {
           <div>
             <h2 className='poppins-bold text-indigo-200 text-2xl md:text-3xl lg:leading-loose leading-normal tracking-tight text-left'>
               Hello, <br />
-              <span className='lg:text-8xl text-6xl'>
+              <span className='text-5xl sm:text-6xl lg:text-8xl'>
                 I am <span className='text-[#8E60F8]'> Josim</span>
               </span>
             </h2>
 
-            <p className='text-lg text-indigo-200 my-5 md:text-left'>
+            <p className='text-lg xl:text-xl text-indigo-200 my-5 md:text-left'>
               A Front-end web developer who is excellent at creating efficient,
               scalable, and user-friendly front-end web solutions.
             </p>
@@ -41,21 +40,31 @@ function Header() {
               <Link
                 href='https://github.com/JosimHossain1'
                 className='cursor-pointer'
+                target='_blank'
               >
-                <AiFillGithub className='hover:text-indigo-300 text-2xl ' />
+                <AiFillGithub className='hover:text-indigo-300 text-2xl xl:text-3xl' />
               </Link>
-              <a href='https://www.linkedin.com/in/josim-hawladar'>
-                <AiOutlineLinkedin className='hover:text-blue-500 text-2xl' />
-              </a>
+              <Link
+                href='https://www.linkedin.com/in/josim-hawladar'
+                target='_blank'
+              >
+                <AiOutlineLinkedin className='hover:text-blue-500 text-2xl xl:text-3xl' />
+              </Link>
 
-              <a href='https://www.facebook.com/hawladar.josim'>
-                <CiFacebook className='hover:text-indigo-500 text-2xl ' />
-              </a>
-              <a href='https://www.youtube.com/@deshideveloper93'>
-                <FaYoutube className='hover:text-red-500 text-2xl ' />
-              </a>
+              <Link
+                href='https://www.facebook.com/hawladar.josim'
+                target='_blank'
+              >
+                <CiFacebook className='hover:text-indigo-500 text-2xl  xl:text-3xl' />
+              </Link>
+              <Link
+                href='https://www.youtube.com/@deshideveloper93'
+                target='_blank'
+              >
+                <FaYoutube className='hover:text-red-500 text-2xl xl:text-3xl' />
+              </Link>
             </div>
-            <a
+            <Link
               href='https://drive.google.com/file/d/1Z9B_9IN6FxyZ5HSGOkmFy-YTcS5rVLpL/view'
               target='_blank'
               rel='noopener noreferrer'
@@ -67,7 +76,7 @@ function Header() {
                 <FaExternalLinkAlt />
                 <span>Download Resume</span>
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
         {/* Code side */}
