@@ -15,7 +15,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 import { ArrowRight } from 'lucide-react';
 const Project = () => {
   return (
-    <div className='px-4 text-white mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20'>
+    <div className='px-4 text-white mx-auto md:px-24 lg:px-8 lg:pt-20'>
       <div className='text-center'>
         <h3 className='poppins-bold text-center text-3xl py-1 text-indigo-200 mx-auto'>
           Creative Portfolio
@@ -26,7 +26,7 @@ const Project = () => {
           development skills through innovative and impactful solutions."
         </p>
       </div>
-      <div className='grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full mt-10'>
+      <div className='grid gap-5 xl:grid-cols-3 mt-10'>
         {projectData.map((item, key) => (
           <div
             className='border-2 pb-4 overflow-hidde rounded'
@@ -37,7 +37,7 @@ const Project = () => {
               <Image
                 src={item.imageURL}
                 alt={item.name}
-                width={400}
+                width={600}
                 height={400}
               />
             </a>

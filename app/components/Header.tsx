@@ -7,7 +7,7 @@ import { Button } from './ui/button';
 
 function Header() {
   return (
-    <section className='relative flex flex-col items-center justify-between bg-slate-900 min-h-screen pt-36 sm:pt-44 md:pt-44 lg:pt-10'>
+    <section className='relative flex flex-col items-center justify-between bg-slate-900 max-h-screen pt-36 sm:pt-44 md:pt-44 lg:pt-10'>
       <Image
         src='/hero.svg'
         alt='Hero'
@@ -26,7 +26,7 @@ function Header() {
           <div>
             <h2 className='poppins-bold text-indigo-200 text-2xl md:text-3xl lg:leading-loose leading-normal tracking-tight text-left'>
               Hello, <br />
-              <span className='text-5xl sm:text-6xl lg:text-8xl'>
+              <span className='text-5xl sm:text-6xl lg:text-7xl'>
                 I am <span className='text-[#8E60F8]'> Josim</span>
               </span>
             </h2>

@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import logo from '../Assets/Logo.png';
+import logo from '../Assets/j.png';
 import { useState } from 'react';
 import Link from 'next/link';
 
@@ -19,7 +19,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className='fixed w-full z-20 px-6 md:px-10 lg:px-20 xl:px-24'>
+    <nav className='backdrop-blur-sm fixed w-full z-20 px-6 md:px-10 lg:px-20 xl:px-24'>
       <div className='flex items-center justify-between mx-auto p-4'>
         <a href='/' className='flex items-center'>
           <Image
@@ -33,7 +33,7 @@ const Navbar = () => {
             onClick={() => handleClick()}
             data-collapse-toggle='navbar-sticky'
             type='button'
-            className='inline-flex items-center p-2 text-sm text-green-500 rounded-lg md:hidden bg-white focus:outline-none focus:ring-2 focus:ring-gray-200  dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+            className='inline-flex items-center p-2 text-sm text-indigo-500 rounded-lg md:hidden bg-white focus:outline-none focus:ring-2 focus:ring-gray-200  dark:hover:bg-gray-700 dark:focus:ring-gray-600'
             aria-controls='navbar-sticky'
             aria-expanded='false'
           >
