@@ -20,7 +20,7 @@ function Header() {
         {/* Added z-index */}
         <div className='flex lg:w-[55%] xl:w-[45%]'>
           <div className='flex flex-col items-center justify-center mr-10'>
-            <span className='w-5 h-5 rounded-full bg-[#8E60F8] block'></span>
+            <span className='w-5 h-5 rounded-full bg-primary block'></span>
             <span className='w-1 h-80 bg-gradient-to-b from-[#8E60F8] to-slate-900 block mt-[-5px]'></span>
           </div>
           <div>

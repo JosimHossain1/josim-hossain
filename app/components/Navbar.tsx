@@ -1,82 +1,116 @@
 'use client';
-import Image from 'next/image';
-import logo from '../Assets/j.png';
+import React from 'react';
 import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
+import { NavbarLink } from '../Data/data';
 import Link from 'next/link';
+import { Button } from './ui/button';
 
 const Navbar = () => {
-  const [open, setOpen] = useState(true);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [active, setActive] = useState('#');
 
-  const handleClick = () => {
-    setOpen(!open);
+  const activeLink = (path: string, isMobile: boolean) => {
+    setActive(path);
+    setIsMobileMenuOpen(isMobile);
   };
 
-  const menus = [
-    { title: 'Home', path: '/' },
-    { title: 'About', path: '/about' },
-    { title: 'Previous Work', path: '/work' },
-    { title: 'Contact', path: '/contact' },
-  ];
-
   return (
-    <nav className='backdrop-blur-sm fixed w-full z-20 px-6 md:px-10 lg:px-20 xl:px-24'>
-      <div className='flex items-center justify-between mx-auto p-4'>
-        <a href='/' className='flex items-center'>
-          <Image
-            src={logo}
-            className='mr-3 h-12 w-12 rounded-full'
-            alt='Logo'
-          />
-        </a>
-        <div className='flex'>
-          <button
-            onClick={() => handleClick()}
-            data-collapse-toggle='navbar-sticky'
-            type='button'
-            className='inline-flex items-center p-2 text-sm text-indigo-500 rounded-lg md:hidden bg-white focus:outline-none focus:ring-2 focus:ring-gray-200  dark:hover:bg-gray-700 dark:focus:ring-gray-600'
-            aria-controls='navbar-sticky'
-            aria-expanded='false'
+    <motion.nav
+      initial={{ y: -10 }}
+      animate={{ y: 0 }}
+      className='fixed top-5 left-0 right-0 z-50 transition-all duration-300'
+    >
+      <div className='max-w-6xl backdrop-blur-2xl  rounded-full border border-slate-700  mx-auto px-6 py-1'>
+        <div className='flex items-center justify-between'>
+          <motion.a
+            href='#'
+            className='text-2xl font-bold text-primary hover:text-primary/80 transition-colors'
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
-            <span className='sr-only'>Open main menu</span>
-            <svg
-              className='w-6 h-6'
-              aria-hidden='true'
-              fill='currentColor'
-              viewBox='0 0 20 20'
-              xmlns='http://www.w3.org/2000/svg'
-            >
-              <path
-                fill-rule='evenodd'
-                d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z'
-                clip-rule='evenodd'
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <div
-          className={`items-center justify-between ${
-            open ? ' hidden' : 'block'
-          } w-full md:flex md:w-auto md:order-1`}
-          id='navbar-sticky'
-        >
-          <ul
-            className='flex flex-col 
-          p-4 md:p-0 mt-4 font-medium md:flex-row md:space-x-8 md:mt-0 md:border-0 transition-all items-center '
-          >
-            {menus.map((item, key) => (
-              <Link
-                key={key}
-                href={item.path}
-                className='block py-2 pl-3 pr-4 text-white md:p-0'
-                aria-current='page'
+            <Image
+              src='/j.png'
+              alt='logo'
+              width={50}
+              height={50}
+              className='rounded-full border-1'
+            />
+          </motion.a>
+
+          <div className='hidden md:flex items-center space-x-4'>
+            {NavbarLink.map((link) => (
+              <a
+                key={link.id}
+                href={link.href}
+                className={`px-2 text-sm font-medium text-secondary transition-colors rounded-full ${
+                  active === link.href ? 'underline text-white pb-1' : ''
+                }`}
+                onClick={() => activeLink(link.href, false)}
               >
-                {item.title}
-              </Link>
+                {link.name}
+              </a>
             ))}
-          </ul>
+          </div>
+
+          <div className='flex items-center space-x-2'>
+            <Link
+              href='https://wa.me/8801303651288'
+              target='_blank'
+              className='bg-green-50 space-x-2 flex py-2 px-4 rounded-full'
+            >
+              <Image
+                src='/whatsapp.svg'
+                alt='whatsapp'
+                width={16}
+                height={16}
+              />
+              <span>WhatsAapp</span>
+            </Link>
+            <Button
+              variant='ghost'
+              size='icon'
+              className='md:hidden'
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? (
+                <X className='h-6 w-6 text-white' />
+              ) : (
+                <Menu className='h-6 w-6 text-white' />
+              )}
+            </Button>
+          </div>
         </div>
       </div>
-    </nav>
+
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className='md:hidden bg-background/95 backdrop-blur-lg border-t border-border  w-full mx-3'
+          >
+            <div className='px-6 py-4 space-y-2'>
+              {NavbarLink.map((link) => (
+                <a
+                  key={link.id}
+                  href={link.href}
+                  className={`block px-4 py-3 text-xs font-medium text-white hover:text-foreground hover:bg-slate-700 rounded-full transition-colors ${
+                    active === link.href ? 'bg-slate-700' : ''
+                  }`}
+                  onClick={() => activeLink(link.href, false)}
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.nav>
   );
 };
 

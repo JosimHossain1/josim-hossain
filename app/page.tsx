@@ -1,14 +1,11 @@
-
-
-import About from "./components/About";
-import Activities from "./components/Activities";
-import Education from "./components/Education";
-import Gallery from "./components/Gallery";
-import Header from "./components/Header";
-import Project from "./components/Project";
-import Skill from "./components/Skill";
-import Youtube from "./components/Youtube";
-
+import About from './components/About';
+import Activities from './components/Activities';
+import Education from './components/Education';
+import Gallery from './components/Gallery';
+import Header from './components/Header';
+import Project from './components/Project';
+import Skill from './components/Skill';
+import Youtube from './components/Youtube';
 
 export default function Home() {
   return (
@@ -18,8 +15,8 @@ export default function Home() {
       <Skill />
       <Education />
       <Project />
-      <Activities/>
-      <Gallery/>
+      <Activities />
+      <Gallery />
       <Youtube />
     </main>
   );
